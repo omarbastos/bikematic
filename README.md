@@ -52,6 +52,7 @@ For support, email omarsro@gmail.com
 - Added an alert to notify that an order has been scheduled
 - For the orders, the Chain of Responsibility aka CoR or Chain of Command design pattern was used, which is a design pattern that allows a request to be passed along a chain of handlers, such as the ModalRequestBike that allows receiving the requests. data of the order and make the decision to continue towards the ModalConfirmation where we make the necessary calculation for the rental of the bicycle and that in turn, if the user agrees, generates the order or restarts the process
 - The other design pattern used is the Singleton, since the useBikesContext comprises a single instance of which, as the only source of truth, the entire application is hydrated.
+- Modals was implemented with `ReactDOM.createPortal` because we always want to be rendered in the same level of the body in order to prevent wrong behavior on the app.
 
 ## Roadmap
 

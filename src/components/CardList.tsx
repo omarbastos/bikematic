@@ -19,7 +19,7 @@ const CardList = () => {
 
   return (
     <div className="p-4 md:p-12">
-      <h2 className="text-center my-12 text-xl lg:text-3xl font-bold">
+      <h2 className="text-center my-4 text-xl lg:text-3xl font-bold">
         Bikes Available for Rent
       </h2>
       {toast.isVisible && (
