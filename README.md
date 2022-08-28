@@ -50,6 +50,8 @@ For support, email omarsro@gmail.com
 - Although react router dom is included, it is not necessary to use different routes due to the flow, guaranteeing the form through modals, the user experience feels much more fluid
 - Orders are saved in localstorage with the name `orders`
 - Added an alert to notify that an order has been scheduled
+- For the orders, the Chain of Responsibility aka CoR or Chain of Command design pattern was used, which is a design pattern that allows a request to be passed along a chain of handlers, such as the ModalRequestBike that allows receiving the requests. data of the order and make the decision to continue towards the ModalConfirmation where we make the necessary calculation for the rental of the bicycle and that in turn, if the user agrees, generates the order or restarts the process
+- The other design pattern used is the Singleton, since the useBikesContext comprises a single instance of which, as the only source of truth, the entire application is hydrated.
 
 ## Roadmap
 
